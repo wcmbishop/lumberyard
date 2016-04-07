@@ -13,6 +13,8 @@
 		D68EAC2B1CB61FD7005D4D33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D68EAC2A1CB61FD7005D4D33 /* Assets.xcassets */; };
 		D68EAC2E1CB61FD7005D4D33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D68EAC2C1CB61FD7005D4D33 /* LaunchScreen.storyboard */; };
 		D68EAC391CB61FD7005D4D33 /* lumberyardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68EAC381CB61FD7005D4D33 /* lumberyardTests.swift */; };
+		D68EAC441CB621B1005D4D33 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D68EAC431CB621B1005D4D33 /* .gitignore */; };
+		D68EAC461CB621EE005D4D33 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D68EAC451CB621EE005D4D33 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		D68EAC341CB61FD7005D4D33 /* lumberyardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lumberyardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D68EAC381CB61FD7005D4D33 /* lumberyardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lumberyardTests.swift; sourceTree = "<group>"; };
 		D68EAC3A1CB61FD7005D4D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D68EAC431CB621B1005D4D33 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D68EAC451CB621EE005D4D33 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 		D68EAC171CB61FD7005D4D33 = {
 			isa = PBXGroup;
 			children = (
+				D68EAC431CB621B1005D4D33 /* .gitignore */,
+				D68EAC451CB621EE005D4D33 /* README.md */,
 				D68EAC221CB61FD7005D4D33 /* lumberyard */,
 				D68EAC371CB61FD7005D4D33 /* lumberyardTests */,
 				D68EAC211CB61FD7005D4D33 /* Products */,
@@ -177,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D68EAC441CB621B1005D4D33 /* .gitignore in Resources */,
 				D68EAC2E1CB61FD7005D4D33 /* LaunchScreen.storyboard in Resources */,
 				D68EAC2B1CB61FD7005D4D33 /* Assets.xcassets in Resources */,
 				D68EAC291CB61FD7005D4D33 /* Main.storyboard in Resources */,
@@ -197,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D68EAC461CB621EE005D4D33 /* README.md in Sources */,
 				D68EAC261CB61FD7005D4D33 /* ViewController.swift in Sources */,
 				D68EAC241CB61FD7005D4D33 /* AppDelegate.swift in Sources */,
 			);
