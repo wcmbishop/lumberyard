@@ -22,6 +22,14 @@ struct LumberyardAPI {
         
         var queryItems = [NSURLQueryItem]()
         
+        let baseParams = [
+            "endpoint": endpoint.rawValue,
+            ]
+        for (key, value) in baseParams {
+            let item = NSURLQueryItem(name: key, value: value)
+            queryItems.append(item)
+        }
+        
         if let additionalParams = parameters {
             for (key, value) in additionalParams {
                 let item = NSURLQueryItem(name: key, value: value)
