@@ -15,6 +15,7 @@
 		D68EAC391CB61FD7005D4D33 /* lumberyardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68EAC381CB61FD7005D4D33 /* lumberyardTests.swift */; };
 		D68EAC441CB621B1005D4D33 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D68EAC431CB621B1005D4D33 /* .gitignore */; };
 		D68EAC461CB621EE005D4D33 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D68EAC451CB621EE005D4D33 /* README.md */; };
+		DCF954371CBFD74700CEBBAD /* LumberyardAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF954361CBFD74700CEBBAD /* LumberyardAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		D68EAC3A1CB61FD7005D4D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D68EAC431CB621B1005D4D33 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		D68EAC451CB621EE005D4D33 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DCF954361CBFD74700CEBBAD /* LumberyardAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LumberyardAPI.swift; path = lumberyard/LumberyardAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		D68EAC171CB61FD7005D4D33 = {
 			isa = PBXGroup;
 			children = (
+				DCF954361CBFD74700CEBBAD /* LumberyardAPI.swift */,
 				D68EAC431CB621B1005D4D33 /* .gitignore */,
 				D68EAC451CB621EE005D4D33 /* README.md */,
 				D68EAC221CB61FD7005D4D33 /* lumberyard */,
@@ -207,6 +210,7 @@
 				D68EAC461CB621EE005D4D33 /* README.md in Sources */,
 				D68EAC261CB61FD7005D4D33 /* ViewController.swift in Sources */,
 				D68EAC241CB61FD7005D4D33 /* AppDelegate.swift in Sources */,
+				DCF954371CBFD74700CEBBAD /* LumberyardAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +402,7 @@
 				D68EAC3F1CB61FD7005D4D33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D68EAC401CB61FD7005D4D33 /* Build configuration list for PBXNativeTarget "lumberyardTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +411,7 @@
 				D68EAC421CB61FD7005D4D33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
