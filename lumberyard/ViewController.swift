@@ -9,7 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    // MARK: Properties
+    @IBOutlet weak var toolClassTextField: UITextField!
+    @IBOutlet weak var toolTextField: UITextField!
+    @IBOutlet weak var metricTextField: UITextField!
+    @IBOutlet weak var valueTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +26,41 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    // MARK: Actions
+    
+    @IBAction func logValue(sender: UIButton) {
+        showAlertTapped(self)
+    }
+    
+    @IBAction func showAlertTapped(sender: AnyObject) {
+        //Create the AlertController
+        let actionSheetController: UIAlertController = UIAlertController(title: "Log...", message: "Off to the lumberyard with you!", preferredStyle: .Alert)
+        
+        //Create and add the Cancel action
+        let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .Cancel) { action -> Void in
+            //Do some stuff
+        }
+        actionSheetController.addAction(cancelAction)
+        //Create and an option action
+        let recordAction: UIAlertAction = UIAlertAction(title: "Record", style: .Default) { action -> Void in
+            //Do some other stuff
+        }
+        actionSheetController.addAction(recordAction)
+        //Add a text field
+        actionSheetController.addTextFieldWithConfigurationHandler { textField -> Void in
+            //TextField configuration
+            textField.textColor = UIColor.blueColor()
+            // make a nice string
+            let toolClass: String = self.toolClassTextField.text!
+            let tool: String = self.toolTextField.text!
+            let metric: String = self.metricTextField.text!
+            textField.text = "\(toolClass) - \(tool) - \(metric)"
+        }
+        
+        //Present the AlertController
+        self.presentViewController(actionSheetController, animated: true, completion: nil)
+    }
 
 }
 

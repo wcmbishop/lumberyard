@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="IrH-E6-gun">
-                                <rect key="frame" x="20" y="80" width="560" height="213"/>
+                                <rect key="frame" x="20" y="80" width="560" height="330"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tool Class" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzr-Z4-sLm">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="21"/>
@@ -54,6 +54,24 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSJ-aL-l6Z">
+                                        <rect key="frame" x="0.0" y="225" width="560" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input a value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="peP-sk-z1b">
+                                        <rect key="frame" x="0.0" y="258" width="560" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzR-Vt-FDh">
+                                        <rect key="frame" x="0.0" y="300" width="560" height="30"/>
+                                        <state key="normal" title="Log"/>
+                                        <connections>
+                                            <action selector="logValue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qln-h9-JdW"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="04O-dF-LhG" secondAttribute="trailing" id="6AW-VV-8DS"/>
@@ -68,10 +86,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="IrH-E6-gun" secondAttribute="trailing" id="UPS-hR-njj"/>
-                            <constraint firstItem="IrH-E6-gun" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="pKp-J8-Gof"/>
+                            <constraint firstItem="IrH-E6-gun" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="pPd-ZQ-OkZ"/>
                             <constraint firstItem="IrH-E6-gun" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="snh-c6-p1B"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="metricTextField" destination="gui-wO-xdt" id="0c0-1Y-q4J"/>
+                        <outlet property="toolClassTextField" destination="jLk-5i-B8S" id="TAi-FN-Nac"/>
+                        <outlet property="toolTextField" destination="04O-dF-LhG" id="kFJ-lW-jtB"/>
+                        <outlet property="valueTextField" destination="peP-sk-z1b" id="jI3-hI-dW4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
