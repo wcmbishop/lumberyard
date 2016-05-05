@@ -16,6 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+//        let rootViewController = window!.rootViewController as! UIViewController
+//        let viewController = rootViewController.topViewController as! ViewController
+        let viewController = window!.rootViewController as! ViewController
+        viewController.logstore = LogStore()
         return true
     }
 

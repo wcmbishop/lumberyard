@@ -6,6 +6,10 @@
 //  Copyright © 2016 Tranquility Base. All rights reserved.
 //
 
+// To Do List
+// * Add a property to hold onto an instance of LogStore (see page 316 of TBNRG iOS Programming)
+
+
 import UIKit
 
 class ViewController: UIViewController {
@@ -15,11 +19,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var toolTextField: UITextField!
     @IBOutlet weak var metricTextField: UITextField!
     @IBOutlet weak var valueTextField: UITextField!
+    var logstore: LogStore!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        logstore.fetchToolsList()
     }
 
     override func didReceiveMemoryWarning() {
