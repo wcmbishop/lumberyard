@@ -15,6 +15,7 @@
 		D68EAC391CB61FD7005D4D33 /* lumberyardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68EAC381CB61FD7005D4D33 /* lumberyardTests.swift */; };
 		D68EAC441CB621B1005D4D33 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D68EAC431CB621B1005D4D33 /* .gitignore */; };
 		D68EAC461CB621EE005D4D33 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D68EAC451CB621EE005D4D33 /* README.md */; };
+		DCF1B4E81CDBA7AC006FA4F6 /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF1B4E71CDBA7AC006FA4F6 /* Tool.swift */; };
 		DCF954371CBFD74700CEBBAD /* LumberyardAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF954361CBFD74700CEBBAD /* LumberyardAPI.swift */; };
 		DCF954391CC2123700CEBBAD /* LogStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF954381CC2123700CEBBAD /* LogStore.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		D68EAC3A1CB61FD7005D4D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D68EAC431CB621B1005D4D33 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		D68EAC451CB621EE005D4D33 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DCF1B4E71CDBA7AC006FA4F6 /* Tool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
 		DCF954361CBFD74700CEBBAD /* LumberyardAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LumberyardAPI.swift; sourceTree = "<group>"; };
 		DCF954381CC2123700CEBBAD /* LogStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +89,7 @@
 		D68EAC221CB61FD7005D4D33 /* lumberyard */ = {
 			isa = PBXGroup;
 			children = (
+				DCF1B4E71CDBA7AC006FA4F6 /* Tool.swift */,
 				DCF954381CC2123700CEBBAD /* LogStore.swift */,
 				DCF954361CBFD74700CEBBAD /* LumberyardAPI.swift */,
 				D68EAC231CB61FD7005D4D33 /* AppDelegate.swift */,
@@ -212,6 +215,7 @@
 			files = (
 				D68EAC461CB621EE005D4D33 /* README.md in Sources */,
 				DCF954391CC2123700CEBBAD /* LogStore.swift in Sources */,
+				DCF1B4E81CDBA7AC006FA4F6 /* Tool.swift in Sources */,
 				D68EAC261CB61FD7005D4D33 /* ViewController.swift in Sources */,
 				D68EAC241CB61FD7005D4D33 /* AppDelegate.swift in Sources */,
 				DCF954371CBFD74700CEBBAD /* LumberyardAPI.swift in Sources */,
